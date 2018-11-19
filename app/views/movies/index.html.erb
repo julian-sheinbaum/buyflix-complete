@@ -1,0 +1,5 @@
+<div class="row">
+  <% for movie in @movies %>
+    <div class="col-sm-2 mt-3"><a href="/movies/<%= movie.id %>"><img class="img-fluid" src="<%= movie.poster %>"></a></div>
+  <% end %>
+</div>

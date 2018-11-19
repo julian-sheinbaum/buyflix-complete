@@ -1,0 +1,13 @@
+<div class="row mt-3">
+  <div class="col-sm-6">
+    <img class="img-fluid" src="<%= @movie.poster %>">
+  </div>
+  <div class="col-sm-6">
+    <h2><%= @movie.title %></h2>
+    <p><%= @movie.summary %></p>
+    <p>
+      <a href="/movies/<%= @movie.id %>/edit">Edit</a>
+      <a data-method="delete" data-confirm="FOR REALZ???" href="/movies/<%= @movie.id %>">Delete</a>
+    </p>
+  </div>
+</div>

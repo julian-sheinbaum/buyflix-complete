@@ -1,0 +1,7 @@
+<%= bootstrap_form_for @movie do |form| %>
+  <%= form.text_field :title %>
+  <%= form.text_area :summary %>
+  <%= form.text_field :year_released %>
+  <%= form.text_field :poster %>
+  <%= form.submit %>
+<% end %>
